@@ -1,5 +1,6 @@
 ﻿
 using Demo.Interface_Ex02;
+using Demo.Interface_Ex03;
 
 namespace Demo
 {
@@ -58,7 +59,21 @@ namespace Demo
             //PrintTenNUmbersFromSeries(seriesByThree); 
             #endregion
 
+            #region Interface Ex03
 
+
+            //Airplane airplane = new Airplane();
+            //airplane.Speed = 480;
+            ////airplane.forward();
+
+
+            //IMoveable moveable = airplane;
+            //moveable.Forward();
+
+            //IFlyable flyable = airplane;
+            //flyable.Forward();
+
+            #endregion
         }
     }
 }
