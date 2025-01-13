@@ -20,7 +20,7 @@ namespace Demo
             }
             series.Reset();
             Console.WriteLine();
-        } 
+        }
         #endregion
         static void Main(string[] args)
         {
@@ -73,6 +73,45 @@ namespace Demo
             //IFlyable flyable = airplane;
             //flyable.Forward();
 
+            #endregion
+
+            #region Shallow Copy vs Deep Copy
+            //int[] Arr01 = [1, 2, 3];
+            //int[] Arr02 = [4, 5, 6];
+
+            //Console.WriteLine($"Arr01.GetHashCode() = {Arr01.GetHashCode()}");
+            //Console.WriteLine($"Arr02.GetHashCode() = {Arr02.GetHashCode()}");
+
+
+            #region Shallow Copy
+            // Arr02 = Arr01; Console.WriteLine("After Shallow Copy --> Arr02 = Arr01");
+            /// Shallow Copy
+            /// This Object [1,2,3] Has 2 References [Arr01,Arr02]
+            /// This Object [4,5,6] became Unreachable object 
+            #endregion
+
+            #region Deep Copy
+            //Arr02 = (int[])Arr01.Clone(); Console.WriteLine("Deep Copy");
+            //// Clone Method: Will Generate new Object with new and different Identity
+            ////               This Object will have the same State [Data] of the Caller Object 
+            #endregion
+
+            //Console.WriteLine($"Arr01.GetHashCode() = {Arr01.GetHashCode()}");
+            //Console.WriteLine($"Arr02.GetHashCode() = {Arr02.GetHashCode()}");
+
+            //Arr02[0] = 100;
+
+            //Console.WriteLine(Arr01[0]); // 100
+
+            //Console.WriteLine("----------------------------");
+
+            //foreach(int numbers in Arr01)
+            //{
+            //    Console.WriteLine(numbers);
+            //} foreach(int numbers in Arr02)
+            //{
+            //    Console.WriteLine(numbers);
+            //} 
             #endregion
         }
     }
