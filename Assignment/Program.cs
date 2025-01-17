@@ -1,4 +1,6 @@
-﻿namespace Assignment
+﻿using Assignment.Part02_Q1;
+
+namespace Assignment
 {
     internal class Program
     {
@@ -50,6 +52,18 @@
             #region Q10:How can a C# class implement multiple interfaces?
 
             // Answer: By separating interface names with commas
+            #endregion
+            #endregion
+
+            #region Part02
+
+
+            #region Q1: Define an interface named IShape with a property Area and a method DisplayShapeInfo. 
+            //Circle circle = new Circle(12);
+            //Rectangle rectangle = new Rectangle(10, 20);
+            //circle.DisplayShapeInfo();
+            //rectangle.DisplayShapeInfo();
+
             #endregion
             #endregion
         }
