@@ -1,4 +1,5 @@
 ﻿
+using Demo.Built_in_Interfaces;
 using Demo.Interface_Ex02;
 using Demo.Interface_Ex03;
 
@@ -134,6 +135,39 @@ namespace Demo
 
             //Console.WriteLine(Names01[0]); // Ahmed
             #endregion
+
+
+
+            #region ICloneable Interface
+
+            //Employee employee01 = new Employee() { id = 10, Name = "Ahmed", Salary = 8_000, Department = new Department() {Code = 1001 , Title = "Sales" }} ;
+            //Employee employee02 = new Employee() { id = 20, Name = "Omnia", Salary = 4_000, Department = new Department() {Code = 2002,Title = "HR" } };
+
+            //Console.WriteLine($"employee01.GetHashCode() = {employee01.GetHashCode()}");
+            //Console.WriteLine($"employee02.GetHashCode() = {employee02.GetHashCode()}");
+
+            //employee02 = (Employee)employee01.Clone(); // Deep copy using Clone
+            //                                           // Clone Method: this method will generate New object with new and different Identity
+            //                                           //               this object will have the same state [Data] of the caller object
+
+
+
+            //Console.WriteLine("After Deep Copy");
+            //if (employee02.Department != null)
+            //    employee02.Department.Title = "New";
+
+
+
+            //Console.WriteLine($"employee01.GetHashCode() = {employee01.GetHashCode()}");
+            //Console.WriteLine($"employee02.GetHashCode() = {employee02.GetHashCode()}");
+
+            //Console.WriteLine("---------------------");
+            //Console.WriteLine($"employee01 {employee01.Department.Title}"); 
+            #endregion
+
+
         }
+
+
     }
 }
