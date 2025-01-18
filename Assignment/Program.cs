@@ -1,4 +1,5 @@
 ﻿using Assignment.Part02_Q1;
+using Assignment.Part02_Q2;
 
 namespace Assignment
 {
@@ -65,7 +66,21 @@ namespace Assignment
             //rectangle.DisplayShapeInfo();
 
             #endregion
+
+            #region Q2: defining the IAuthenticationService interface
+
+            //IAuthenticationService authService = new BasicAuthenticationService("Mohamed Ahmed", "123123", "Senior");
+            //bool flag;
+            //flag = authService.AuthenticateUser("Mostafa","123123");
+            //Console.WriteLine(flag);
+            
+            //flag =authService.AuthorizeUser("Mohamed Ahmed", "Senior");
+            //Console.WriteLine(flag);
+            
             #endregion
-        }
+
+
+            #endregion
+        }   
     }
 }
