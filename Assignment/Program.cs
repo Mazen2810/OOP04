@@ -1,5 +1,6 @@
 ﻿using Assignment.Part02_Q1;
 using Assignment.Part02_Q2;
+using Assignment.Part02_Q3;
 
 namespace Assignment
 {
@@ -73,14 +74,24 @@ namespace Assignment
             //bool flag;
             //flag = authService.AuthenticateUser("Mostafa","123123");
             //Console.WriteLine(flag);
-            
+
             //flag =authService.AuthorizeUser("Mohamed Ahmed", "Senior");
             //Console.WriteLine(flag);
-            
-            #endregion
-
 
             #endregion
-        }   
+
+            #region Q3: INotificationService interface 
+
+            //INotificationService NotificationFromEmail = new EmailNotificationService();
+            //INotificationService NotificationFromSMS = new SmsNotificationService();
+            //INotificationService NotificationFromSocial = new PushNotificationService();
+
+            //NotificationFromEmail.SendNotification("Mazen", "Hello, How you doing?");
+
+            //NotificationFromSMS.SendNotification("Mazen", "Hello, How you doing?");
+            //NotificationFromSocial.SendNotification("Mazen", "Hello, How you doing?");
+            #endregion
+            #endregion
+        }
     }
 }
